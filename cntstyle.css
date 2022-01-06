@@ -1,0 +1,176 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.front{
+    width: 1170px;
+    margin:auto;
+}
+header {
+background: url("2641159.gif");
+height: 100vh;
+-webkit-background-size:cover;
+background-size: cover;
+background-position: center center;
+position: relative;
+}
+.buttons{
+    float: right;
+    list-style: none;
+    margin-top: 40px;
+}
+.buttons li{
+    display: inline-block;
+}
+.buttons li a{
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 5px 25px;
+    font-family: poppins;
+    font-size: 15px;
+    border-radius: 20px;
+}
+.buttons li a:hover{
+    background: palevioletred;
+    color: #fff;
+}
+.buttons li a.active{
+    background: palevioletred;
+    color: #fff;
+}
+.contact{
+    position: relative;
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact .content{
+    max-height: 50vh;
+    max-width: 800px;
+    text-align: center;
+}
+h1{
+    font-family: Pacifico, Regular;
+    font-size: 36px;
+    font-weight: 600;
+}
+h2{
+    font-family: Staatliches, Regular;
+}
+.contact .content p{
+    font-weight: 300;
+    font-family: poppins;
+}
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    flex-direction: column;
+}
+.container .cncinfo{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.container .cncinfo .box{
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+}
+.container .cncinfo .box .icon{
+    min-width: 60px;
+    height: 60px;
+    background: rgba(236, 147, 177);
+    display: flex;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+}
+.container .cncinfo .box .txt{
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    flex-direction: column;
+}
+h3{
+    font-family: Staatliches, Regular;
+}
+.container .cncinfo .box .txt p{
+    font-family: poppins;
+    font-size: 13px;
+}
+.cntfrm{
+    width: 40%;
+    padding: 40px;
+    background: rgba(236, 147, 177);
+}
+.cntfrm{
+    font-weight: 500;
+}
+.cntfrm .inptbx{
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+.cntfrm .inptbx input, 
+.cntfrm .inptbx textarea{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 14px;
+    font-family: poppins;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+    resize: none;
+}
+.cntfrm .inptbx span{
+    font-size: 16px;
+    font-family: poppins;
+    text-transform: uppercase;
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 14px;
+    font-family: poppins;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+}
+.cntfrm .inptbx input:focus ~ span,
+.cntfrm .inptbx input:valid ~ span,
+.cntfrm .inptbx textarea:focus ~ span,
+.cntfrm .inptbx textarea:valid ~ span{
+    font-size: 12px;
+    transform: translateY(-20px);
+}
+.cntfrm .inptbx input[type="submit"]{
+    width: 100px;
+    background: #fff;
+    font-family: poppins;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+    font-size: 14px;
+}
+@media(max-width: 991px)
+{
+    .contact{
+        padding: 50px;
+    }
+    .container{
+        flex-direction: column;
+    }
+    .container .cncinfo{
+        margin-bottom: 40px;
+    }
+}

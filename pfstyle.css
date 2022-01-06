@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.front{
+    width: 1170px;
+    margin:auto;
+}
+header {
+background: url("2641159.gif");
+height: 100vh;
+-webkit-background-size:cover;
+background-size: cover;
+background-position: center center;
+position: relative;
+}
+.buttons{
+    float: right;
+    list-style: none;
+    margin-top: 40px;
+}
+.buttons li{
+    display: inline-block;
+}
+.buttons li a{
+    color: black;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 5px 25px;
+    font-family: poppins;
+    font-size: 15px;
+    border-radius: 20px;
+}
+.buttons li a:hover{
+    background: palevioletred;
+    color: #fff;
+}
+.buttons li a.active{
+    background: palevioletred;
+    color: #fff;
+}
+.pics {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 80px;
+}
+h1{
+    font-size: 36px;
+    font-weight: 600;
+    font-family: Pacifico, Regular;
+}
+p{
+    font-family: Poppins;
+    font-size: 17px;
+}
+.cols{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.pts{
+    margin-top: 10px;
+    flex-basis: 32%;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.pts img{
+    width: 100%;
+    display: block;
+}
+.lyr{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+.lyr:hover{
+    background: rgba(223, 91, 168, 0.7);
+}
+.lyr h3{
+    font-family: Poppins;
+    text-transform: uppercase;
+    width: 100%;
+    font-weight: 500;
+    color: #fff;
+    font-size: 20px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    transition: 0.5s;
+}
+.lyr:hover h3{
+    bottom: 49%;
+    opacity: 1;
+}
